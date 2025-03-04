@@ -6,7 +6,9 @@ import Button from "../../layout/Button"
 
 import { FaLinkedin, FaGithub, FaReact, FaHtml5, FaCss3Alt, FaGitAlt } from "react-icons/fa6"
 import { IoDocumentText, IoLogoJavascript } from "react-icons/io5"
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiTypescript } from "react-icons/si"
 
 export default function Sobre() {
 
@@ -28,15 +30,15 @@ export default function Sobre() {
             desc: 'O JavaScript é uma linguagem de programação de alto nível, leve e amplamente utilizada para o desenvolvimento web. Originalmente criada para adicionar interatividade às páginas web, ela agora é uma das linguagens mais populares e versáteis, podendo ser usada tanto no front-end quanto no back-end, por meio de ambientes como o Node.js.',
             link: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'
         },
-        html: {
-            name: 'html',
-            desc: 'O HTML (HyperText Markup Language) é a linguagem de marcação padrão usada para estruturar e apresentar conteúdo na web. Ele define a organização dos elementos em uma página, como títulos, parágrafos, imagens, links, tabelas e formulários, utilizando uma hierarquia de tags. O HTML funciona como a base de qualquer site ou aplicação web.',
-            link: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML'
+        next: {
+            name: 'next',
+            desc: 'Next.js é uma estrutura da web de desenvolvimento front-end React de código aberto criada por Vercel que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.',
+            link: 'https://nextjs.org/'
         },
-        css: {
-            name: 'css',
-            desc: 'O CSS (Cascading Style Sheets) é uma linguagem de estilo usada para definir a aparência e o layout de elementos em páginas da web. Ele permite estilizar o HTML aplicando cores, fontes, espaçamentos, alinhamentos, tamanhos e outras propriedades visuais. Com o CSS, é possível criar desde designs simples até interfaces complexas e responsivas.',
-            link: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS'
+        typeScript: {
+            name: 'typescript',
+            desc: 'TypeScript é um superconjunto de JavaScript, ou seja, um conjunto de ferramentas e formas mais eficientes de escrever código JavaScript, adicionando recursos que não estão presentes de maneira nativa na linguagem.',
+            link: 'https://www.typescriptlang.org/'
         },
         git: {
             name: 'git',
@@ -75,6 +77,11 @@ export default function Sobre() {
                         <Icon element={<FaReact/>} activated={technologies.name == 'reactjs' ? true : false}
                          hoverColor="cyan" extraClass={'text-6xl max-tbxl:text-[54px] max-mbxl:text-[48px]'}/>
                     </button>
+
+                    <button onClick={() => {settechnologies(technologiesData.next);}}>
+                        <Icon element={<RiNextjsFill/>} activated={technologies.name == 'next' ? true : false}
+                         hoverColor="black" extraClass={'text-6xl max-tbxl:text-[54px] max-mbxl:text-[48px]'}/>
+                    </button>
                     
                     <button onClick={() => {settechnologies(technologiesData.tailwind);}}>
                         <Icon element={<RiTailwindCssFill/>} activated={technologies.name == 'tailwind' ? true : false}
@@ -86,14 +93,9 @@ export default function Sobre() {
                          hoverColor="yellow" extraClass={'text-6xl max-tbxl:text-[54px] max-mbxl:text-[48px]'}/>
                     </button>
                     
-                    <button onClick={() => {settechnologies(technologiesData.html);}}>
-                        <Icon element={<FaHtml5/>} activated={technologies.name == 'html' ? true : false}
-                         hoverColor="orange" extraClass={'text-6xl max-tbxl:text-[54px] max-mbxl:text-[48px]'}/>
-                    </button>
-                    
-                    <button onClick={() => {settechnologies(technologiesData.css);}}>
-                        <Icon element={<FaCss3Alt/>} activated={technologies.name == 'css' ? true : false}
-                         hoverColor="blue" extraClass={'text-6xl max-tbxl:text-[54px] max-mbxl:text-[48px]'}/>
+                    <button onClick={() => {settechnologies(technologiesData.typeScript);}}>
+                        <Icon element={<SiTypescript/>} activated={technologies.name == 'typescript' ? true : false}
+                         hoverColor="blue" extraClass={'text-[58px] max-tbxl:text-[48px] max-mbxl:text-[42px]'}/>
                     </button>
                     
                     <button onClick={() => {settechnologies(technologiesData.git);}}>

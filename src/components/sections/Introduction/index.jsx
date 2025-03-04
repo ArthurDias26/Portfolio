@@ -6,7 +6,7 @@ import Button from "../../layout/Button";
 
 export default function Introduction() {
   return (
-    <div className="w-full h-screen pl-36 flex flex-col justify-center items-start bg-gradient-to-tr from-darkBlue to-purple
+    <div className="w-full h-[100dvh] pl-36 flex flex-col justify-center items-start bg-gradient-to-tr from-darkBlue to-purple
      text-white select-none shadow-[0px_0px_20px_15px_rgba(138,_93,_178,_1)]
        max-tbxl:pl-24 max-tbsm:pl-16 max-mbxl:pl-12 max-mbsm:pl-6
      ">
@@ -23,9 +23,9 @@ export default function Introduction() {
                     </span>
                     
                     <span className="ml-5 w-max flex gap-3 max-mbxl:ml-2 max-mbsm:gap-1" data-aos="fade-up" data-aos-delay="120">
-                        <Icon element={<FaLinkedin/>} link={'https://br.linkedin.com/'} extraClass={'max-tbsm:text-5xl max-mbxl:text-3xl max-mbsm:text-[26px]'} />
+                        <Icon element={<FaLinkedin/>} link={'https://www.linkedin.com/in/arthur-barbosa-dias/'} extraClass={'max-tbsm:text-5xl max-mbxl:text-3xl max-mbsm:text-[26px]'} />
                         <Icon element={<FaGithub/>} link={'https://github.com/ArthurDias26'} extraClass={'max-tbsm:text-5xl max-mbxl:text-3xl max-mbsm:text-[26px]'}/>
-                        <Icon element={<IoDocumentText/>} link={'https://github.com/'} extraClass={'max-tbsm:text-5xl max-mbxl:text-3xl max-mbsm:text-[26px]'}/>
+                        <Icon element={<IoDocumentText/>} link={'../../../assets/Currículo Arthur Dias.pdf'} download={"Currículo Arthur Dias.pdf"} extraClass={'max-tbsm:text-5xl max-mbxl:text-3xl max-mbsm:text-[26px]'}/>
 
                     </span>
                 </div>
