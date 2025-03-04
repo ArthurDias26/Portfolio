@@ -25,7 +25,7 @@ export default function Introduction() {
                     <span className="ml-5 w-max flex gap-3 max-mbxl:ml-2 max-mbsm:gap-1" data-aos="fade-up" data-aos-delay="120">
                         <Icon element={<FaLinkedin/>} link={'https://www.linkedin.com/in/arthur-barbosa-dias/'} extraClass={'max-tbsm:text-5xl max-mbxl:text-3xl max-mbsm:text-[26px]'} />
                         <Icon element={<FaGithub/>} link={'https://github.com/ArthurDias26'} extraClass={'max-tbsm:text-5xl max-mbxl:text-3xl max-mbsm:text-[26px]'}/>
-                        <Icon element={<IoDocumentText/>} link={'../../../assets/Currículo Arthur Dias.pdf'} download={"Currículo Arthur Dias.pdf"} extraClass={'max-tbsm:text-5xl max-mbxl:text-3xl max-mbsm:text-[26px]'}/>
+                        <Icon element={<IoDocumentText/>} link={'../../../../public/Currículo Arthur Dias.pdf'} download={"Currículo Arthur Dias.pdf"} extraClass={'max-tbsm:text-5xl max-mbxl:text-3xl max-mbsm:text-[26px]'}/>
 
                     </span>
                 </div>
