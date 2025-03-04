@@ -51,7 +51,7 @@ export default function Sobre() {
         <Title text={'SOBRE MIM'} color="white"/>
 
         <div className="flex justify-center items-center min-h-[80%] max-tbsm:flex-col">
-            <div className="w-1/2 max-tbsm:w-4/5 max-mbsm:w-full max-mbsm:px-[3.5vw]">
+            <div className="w-1/2 max-tbsm:w-4/5 max-mbsm:w-full max-mbsm:px-[3.5vw]" data-aos="fade-right" data-aos-delay="100">
 
                 <p className="m-auto w-4/5 text-center text-2xl mt-14 max-tbxl:text-[22px] max-mbxl:text-lg max-mbxl:w-[92%]
                 max-mbsm:w-full max-mbsm:text-[17px]">
@@ -65,7 +65,7 @@ export default function Sobre() {
                 </div>
             </div>
 
-            <div className="w-1/2 max-tbsm:w-4/5 max-mbsm:w-full max-mbsm:px-[3.5vw]">
+            <div className="w-1/2 max-tbsm:w-4/5 max-mbsm:w-full max-mbsm:px-[3.5vw]" data-aos="fade-left" data-aos-delay="100">
                 <h3 className="text-center text-4xl font-bold mt-20 mb-6 max-tbxl:text-3xl max-mbxl:mt-12 max-mbxl:text-2xl max-mbsm:text-xl">
                     Tecnologias que Utilizo:
                 </h3>

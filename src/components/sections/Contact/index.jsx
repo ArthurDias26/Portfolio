@@ -12,6 +12,7 @@ import emailjs from "@emailjs/browser"
 
 import { HiOutlineMail } from "react-icons/hi"
 
+
 export default function Contact() {
 
     const [emailCopied, setEmailCopied] = useState(false)
@@ -81,7 +82,7 @@ export default function Contact() {
         <div className="w-full flex justify-center items-center flex-wrap 
         max-[1025px]:flex-col-reverse max-[1025px]:gap-12 max-[1025px]:py-10">
 
-            <div className="w-9/12 flex flex-col justify-start items-center max-[1025px]:w-full">
+            <div className="w-9/12 flex flex-col justify-start items-center max-[1025px]:w-full" data-aos="fade-up-right" data-aos-delay="100">
                 <div className="w-7/12 max-mbxl:w-4/5">
                     <h3 className="text-center text-4xl font-bold mb-2 max-mbsm:text-2xl">Se interessou?</h3>
                     <p className=" text-center text-lg leading-tight mb-4 max-mbsm:text-base">
@@ -116,7 +117,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="w-max flex flex-col justify-center items-center select-none">
+            <div className="w-max flex flex-col justify-center items-center select-none"  data-aos="fade-up" data-aos-delay="100">
                     <HiOutlineMail className={`text-7xl transition duration-300 ${emailCopied && 'text-green-500'}`}/>
 
                     <h3 className={`text-2xl font-bold mb-3 transition duration-300 ${emailCopied && 'text-green-500'}
