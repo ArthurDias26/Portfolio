@@ -12,6 +12,7 @@ import emailjs from "@emailjs/browser"
 
 import { HiOutlineMail } from "react-icons/hi"
 
+import formBack from '../../../assets/images/form-back.jpg'
 
 export default function Contact() {
 
@@ -83,7 +84,10 @@ export default function Contact() {
         max-[1025px]:flex-col-reverse max-[1025px]:gap-12 max-[1025px]:py-10">
 
             <div className="w-9/12 flex flex-col justify-start items-center max-[1025px]:w-full" data-aos="fade-up-right" data-aos-delay="100">
-                <div className="w-7/12 max-mbxl:w-4/5">
+                <div className="w-7/12 max-mbxl:w-4/5 border-2 border-black pl-20 pr-4 py-2 rounded-2xl relative bg-">
+
+                    <div className="h-[calc(100%_+_4px)] w-16 bg-purple absolute -left-1 -top-[2px] rounded-l-2xl"></div>
+
                     <h3 className="text-center text-4xl font-bold mb-2 max-mbsm:text-2xl">Se interessou?</h3>
                     <p className=" text-center text-lg leading-tight mb-4 max-mbsm:text-base">
                         Preencha o formulário com suas informações para iniciar uma conversa via E-mail. 
