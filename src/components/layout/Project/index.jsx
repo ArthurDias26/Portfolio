@@ -1,6 +1,6 @@
 import Button from "../Button"
 
-export default function Project({projectName, image, celImage, icons, description}) {
+export default function Project({projectName, link, image, celImage, icons, description}) {
   return (
     <div className="pl-36 mt-16 mb-32 max-tbsm:pl-0">
         <h3 className="font-bold  font-openSans text-4xl mb-4 max-tbsm:pl-24 max-mbxl:text-[32px] max-mbsm:text-[26px] max-mbsm:pl-10" data-aos="fade-right" data-aos-delay="100">
@@ -27,7 +27,7 @@ export default function Project({projectName, image, celImage, icons, descriptio
                 </div>
 
                 <div className="flex justify-center items-center my-5">
-                    <Button text={'Ir para o site'} />
+                    <Button text={'Ir para o site'} link={link} external />
                 </div>
 
                 <p className="text-center max-tbxl:text-sm">{description}</p>
