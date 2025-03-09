@@ -61,9 +61,9 @@ export default function Sobre() {
                 </p>
 
                 <div className="flex justify-center items-center mt-6 gap-6">
-                    <Icon element={<FaLinkedin/>} link={'https://br.linkedin.com/'} extraClass={'text-[46px] max-tbxl:text-[40px] max-mbxl:text-[34px]'}/>
+                    <Icon element={<FaLinkedin/>} link={'https://www.linkedin.com/in/arthur-barbosa-dias/'} extraClass={'text-[46px] max-tbxl:text-[40px] max-mbxl:text-[34px]'}/>
                     <Icon element={<FaGithub/>} link={'https://github.com/ArthurDias26'} extraClass={'text-[46px] max-tbxl:text-[40px] max-mbxl:text-[34px]'}/>
-                    <Icon element={<IoDocumentText/>} link={'https://github.com/'} extraClass={'text-[46px] max-tbxl:text-[40px] max-mbxl:text-[34px]'}/>
+                    <Icon element={<IoDocumentText/>} link={'/Currículo Arthur Dias.pdf'} download={"Currículo Arthur Dias.pdf"} extraClass={'text-[46px] max-tbxl:text-[40px] max-mbxl:text-[34px]'}/>
                 </div>
             </div>
 
