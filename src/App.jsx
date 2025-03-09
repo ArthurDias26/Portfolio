@@ -17,9 +17,8 @@ export default function App() {
 }, [])
 
   return (
-    <div>
+    <div className="max-w-[100vw] overflow-x-hidden">
       <Header/>
-
       <main>
         <Introduction/>
         <Projects/>
