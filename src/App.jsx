@@ -17,7 +17,7 @@ export default function App() {
 }, [])
 
   return (
-    <div className="max-w-[100vw] overflow-x-hidden">
+    <div className="max-w-[100vw] overflow-hidden">
       <Header/>
       <main>
         <Introduction/>
